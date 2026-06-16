@@ -1,0 +1,41 @@
+.footer {
+  background-color: var(--card-bg);
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.footer-copyright {
+  font-weight: 600;
+  color: var(--dark-navy);
+  font-size: 0.875rem;
+}
+
+.footer-tagline {
+  color: var(--text-sub);
+  font-size: 0.875rem;
+}
+
+.footer-dot {
+  display: none;
+  color: var(--text-sub);
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .footer-dot.desktop-only {
+    display: inline;
+  }
+}

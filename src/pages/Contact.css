@@ -1,0 +1,103 @@
+.contact-main {
+  background-color: var(--bg-color);
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-subtitle {
+  color: var(--text-sub);
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text-main);
+  background-color: var(--card-bg);
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.1);
+}
+
+.btn-full {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.company-info {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.company-info h2 {
+  font-size: 1.25rem;
+  color: var(--dark-navy);
+}
+
+.company-info p {
+  color: var(--text-sub);
+  margin-top: 0.25rem;
+}
